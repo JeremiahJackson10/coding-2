@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>css grid review</title>
+    <style>
+        .divRules {
+            background-color: rgb(5, 61, 182);
+            height:40px;
+            width: 40px;
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        .container {}
+
+        #mainContnet {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <div class="divRules" style="width: 1200px;">1</div>
+    
+    <div id="mainContent">
+    <div class="divRules" style="width: 800px; height: 300px">2</div>
+    <div class="divRules" style="width: 400px; height: 300px">3</div>
+    </div>
+
+    <div class="divRules">4</div>
+    <div class="divRules">5</div>
+    <div class="divRules">6</div>
+    <div class="divRules">7</div>
+</body>
+
+</html>

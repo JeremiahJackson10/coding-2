@@ -6,33 +6,44 @@
     <style>
         .divRules {
             background-color: rgb(5, 61, 182);
-            height:40px;
-            width: 40px;
-            margin: 10px;
-            font-size: 30px;
+            height: 50px;
+            width: 20px;
+            margin: 6px;
+            font-size: 20px;
+            text-align: center;
         }
 
-        .container {}
-
-        #mainContnet {
+        .container {
             display: grid;
             grid-template-columns: auto auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .grid-container>div {
+            background-color: rgba(0, 71, 177, 0.8);
+            font-size: 30px;
         }
     </style>
 </head>
 
-<body class="container">
-    <div class="divRules" style="width: 1200px;">1</div>
-    
-    <div id="mainContent">
-    <div class="divRules" style="width: 800px; height: 300px">2</div>
-    <div class="divRules" style="width: 400px; height: 300px">3</div>
-    </div>
+<body>
 
-    <div class="divRules">4</div>
-    <div class="divRules">5</div>
-    <div class="divRules">6</div>
-    <div class="divRules">7</div>
+    <div class="divRules" style="width: 1800px;">Nav</div>
+    <div class="container">
+        <div class="divRules" style="width: 900px; height: 300px;">Main Content</div>
+        <div class="divRules" style="width: 800px; height: 300px;">Advertisement</div>
+    </div>
+    <div class="grid-container">
+        <div class="divRules" style="width: 530px; height: 300px;">Option 1</div>
+        <div class=" divRules" style="width: 530px; height: 300px;">Option 2</div>
+        <div class=" divRules" style="width: 530px; height: 300px;">Option 3</div>
+    </div>
+    <div class=" divRules" style="width: 1800px;">Footer</div>
+
 </body>
 
 </html>

@@ -38,3 +38,10 @@ function GradeScale(time){
  }
  
  GradeScale()
+
+ function passwordRetrieval(email, password, sQuestion){
+if(email ==' jjackson@gmail.com'){
+   console.log("correct")
+   console.log("please provide a password?");
+}
+ }
